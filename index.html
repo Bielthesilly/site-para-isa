@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Para minha Isa 💖</title>
+  <style>
+    body{display:flex;justify-content:center;align-items:center;height:100vh;
+      background:#ffe6e6;margin:0;font-family:sans-serif;flex-direction:column}
+    button{padding:15px 30px;font-size:18px;border:none;border-radius:8px;
+      background:#ff99cc;color:white;cursor:pointer;}
+    input{padding:10px;font-size:16px;border:1px solid #ccc;border-radius:5px;}
+  </style>
+</head>
+<body>
+  <h1>Para minha Isa 💖</h1>
+  <input id="senha" type="password" placeholder="Digite a senha"/>
+  <button onclick="checar()">Entrar</button>
+  <script>
+    function checar(){
+      if(document.getElementById('senha').value==='amarIsa'){
+        window.location.href='declara.html';
+      } else {
+        alert('Senha incorreta 💔');
+      }
+    }
+  </script>
+</body>
+</html>
